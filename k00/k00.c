@@ -5,7 +5,7 @@ int main(void)
     int a;
     a=10;
     int b;
-    b=20;
+    b=200;
     printf("a=%d\n",a);
 
     printf("b=%d\n",b);
