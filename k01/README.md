@@ -61,13 +61,38 @@ typedef struct {
 
 
 ## ソースコードの説明
+l.68 pos定義
+l.69 result 定義
+l.72 検索を繰り返すfor文の作成
+l.73~75 対象の値が見つかったらresultにposを代入
+l.77 else文
+l.79 resultで結果を返す
 
-
+l.85 psp定義
+l.89 result定義
+l.91　left<=rightになるまで繰り返す
+l.92 pspの動作
+l.93 if文でもし探す値がヒットしたら
+l.94 resultにpspの値を入れる
+l.95 break により処理終了
+l.97　else if文でもし探している値が今の基準値より大きいとき
+l.98　leftはpsp+1
+l.100 else文でもし探している値が今の基準より小さいとき
+l.101 rightはpsp-1
+l.104 returnで結果を返す
 
 
 ## 出力結果
 
-```
+```===== linear search =====
+City ID?42411
+42411, 長崎県, 新上五島町, 19718, 9197, 10521
+
+===== binary search =====
+City ID?42391
+42391, 長崎県, 佐々町, 13626, 6426, 7200
+PS C:\Users\bb35319029\Desktop\2020psp3\2020psp3\k01>
+
 
 ```
 

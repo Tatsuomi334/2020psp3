@@ -76,6 +76,13 @@ void PrintList(Node* pTop)
 Node* InsertNewNode(City newCity, Node* pNext)
 {
     //  ここを実装する
+   Node*a;
+   a=malloc(sizeof(Node) * 21);
+   typedef struct City newCity{
+       Node* next;
+      
+   } Node;
+
 
 }
 
