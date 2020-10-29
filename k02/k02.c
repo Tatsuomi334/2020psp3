@@ -76,13 +76,11 @@ void PrintList(Node* pTop)
 Node* InsertNewNode(City newCity, Node* pNext)
 {
     //  ここを実装する
-   Node*a;
-   a=malloc(sizeof(Node) * 21);
-   typedef struct City newCity{
-       Node* next;
-      
-   } Node;
-
+   
+   Node*newnode=mallco(sizeof(Node));
+   newnode-> city=newCity;
+   newnode->pNext=pNext;
+   return newnode;
 
 }
 
@@ -107,7 +105,18 @@ int SearchCityByName(Node* pList, char* cityName, City* pCity)
 int SearchCityByID(Node* pList, int ID, City* pCity)
 {
     // ここを実装する
+    Node*newnode=mallco(sizeof(Node));
+    Node*pNode;
+    pNode=newnode;
+while(pNode !=NULL){
+    pNode->ID=newnode;
 
+}
+
+
+
+
+    
 }
 
 int main(void)
