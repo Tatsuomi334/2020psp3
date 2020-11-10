@@ -77,7 +77,7 @@ Node* InsertNewNode(City newCity, Node* pNext)
 {
     //  ここを実装する
    
-   Node*newnode=mallco(sizeof(Node));
+   Node*newnode=malloc(sizeof(Node));
    newnode-> city=newCity;
    newnode->pNext=pNext;
    return newnode;
@@ -105,19 +105,21 @@ int SearchCityByName(Node* pList, char* cityName, City* pCity)
 int SearchCityByID(Node* pList, int ID, City* pCity)
 {
     // ここを実装する
-    Node*newnode=mallco(sizeof(Node));
     Node*pNode;
-    pNode=newnode;
-while(pNode !=NULL){
-    pNode->ID=newnode;
-
+    pList=pNode;
+    int i=0;   
+while(pList !=NULL){
+   if(pList->city.id=ID){
+      *pCity=pList->city;
+      return i; 
+    }
+    pList=pList->pNext;
+    i++ ;
+      
+}
+   return -1;
 }
 
-
-
-
-    
-}
 
 int main(void)
 {
