@@ -131,9 +131,9 @@ l.120 IDがヒットしなかったら-1を返す。
 42201, 長崎県, 長崎市, 429508, 198716, 230792
 print list. items = 21
 ===== Print End =====
-City ID?31920
-the city was found at 0
-31920, 長崎県, 新上五島町, 19718, 9197, 10521
+City ID?42201
+the city was found at 20
+42201, 長崎県, 長崎市, 429508, 198716, 230792
 free list. items = 21
 ```
 

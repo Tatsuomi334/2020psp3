@@ -106,10 +106,9 @@ int SearchCityByID(Node* pList, int ID, City* pCity)
 {
     // ここを実装する
     Node*pNode;
-    pList=pNode;
     int i=0;   
 while(pList !=NULL){
-   if(pList->city.id=ID){
+   if(pList->city.id==ID){
       *pCity=pList->city;
       return i; 
     }
