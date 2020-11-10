@@ -1,10 +1,13 @@
-  #include <stdio.h>
-  typedef struct stPerson{
-    char name[21];
-    int birthday;
-    int age
-    }Person;
-    int main(void){
-      int your_size= 84;
-  printf("your size=%d, actual size=%d/n", your_size, sizeof(Person));
-    }
+#include <stdio.h>
+
+ void func(int a,int* b){
+   a=10;
+   *b = 10;
+   }int main(void){
+     int a = 1;
+     int b = 1;
+     func(a,&b);
+    
+   printf("a=%d ,b=%d\n",a,b);
+   return 0;
+ }
