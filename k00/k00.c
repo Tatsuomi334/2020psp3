@@ -1,13 +1,15 @@
 #include <stdio.h>
-
- void func(int a,int* b){
-   a=10;
-   *b = 10;
-   }int main(void){
-     int a = 1;
-     int b = 1;
-     func(a,&b);
-    
-   printf("a=%d ,b=%d\n",a,b);
-   return 0;
- }
+int factorial(int n){
+  int val;
+  printf("call n = %d\n", n);
+  if (n == 1) {
+    return 1;
+    }
+    val= n * factorial(n-1);
+  printf("return value=%d\n", val);
+  return val;
+  }
+  
+  int main(void){
+  printf("10! = %d\n", factorial(10));
+  }
