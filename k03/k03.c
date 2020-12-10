@@ -16,7 +16,7 @@ int text_len;
 int key_len;
 text_len=strlen(text);
 key_len=strlen(key);
-int i=0;int j;
+int i=0;
 for(start=0; start<(text_len-key_len);start++){
    for(pos=0;pos<key_len;pos++){   
     if(text[start+pos]==key[pos]){
@@ -62,12 +62,12 @@ char* BMSearch(char text[], char key[])
   int index_a;
   
 
-  while(i<=256){
+  while(i<256){
     table[i]=key_len;
     i++;
   } 
   i=0;
-  while(i<=key_len){ 
+  while(i<key_len){ 
     table[key_len]=(key_len-1)-i;
     i++;
   }
@@ -96,7 +96,7 @@ char* BMSearch(char text[], char key[])
     }   
   }
     if(key_index==0){
-      return &text[index];
+      return &text[index+1];
     }
    else
   {

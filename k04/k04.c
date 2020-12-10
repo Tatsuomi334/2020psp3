@@ -79,7 +79,14 @@ int LoadData(City arrayCity[])
 void BubbleSort(City arrayCity[], int size)
 {
     //  ここを実装する
-
+int cun;
+int pos;
+cun=0;
+for(pos=0;pos<size-1;pos++){
+    if(arrayCity[pos]>arrayCity[pos+1]){
+        
+    }
+}
 }
 
 
