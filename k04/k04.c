@@ -117,7 +117,8 @@ City tmp2;
         pivot=arrayCity[left];
 
         while(1){
-         while(arrayCity[i].seafood<pivot.seafood && i <= right){
+            
+         while(arrayCity[i].seafood<=pivot.seafood && i <= right){
              i++;
             }
           while(pivot.seafood<arrayCity[j].seafood){ 
