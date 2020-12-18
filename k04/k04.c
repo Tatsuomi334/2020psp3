@@ -111,7 +111,7 @@ int j;
 City pivot;
 City tmp1;
 City tmp2;
-    if(right-left>1){
+    if(right-left>0){
         i=left;
         j=right;
         pivot=arrayCity[left];
