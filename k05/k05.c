@@ -112,7 +112,7 @@ int visited[size] ;
    int to;
    int j=0;
    while(i<size){
-       visited[size]=UNVISITED;
+       visited[i]=UNVISITED;
     i++;
     
    }
@@ -120,7 +120,7 @@ int visited[size] ;
    StackPush(start);
    while (StackIsEmpty()== FALSE) {
        form=StackPop();
-    if(visited[form]==UNVISITED){
+    if(visited[form]!=VISITED){
         visited[form]=VISITED;
         for(to=0;to<size;to++){
            if(matrix[form][to]!=UNVISITED){
@@ -131,11 +131,13 @@ int visited[size] ;
             }
 
    }
+   printf("深さ探索\n");
    while(j<size){
     if(visited[j]==VISITED){
         printf("%dは通った。\n",j);
-        j++;
     }
+        j++;
+    
    }
 
    
@@ -210,7 +212,7 @@ void BreadthFirstSearch(int size, int matrix[size][size], int start)
   int form;
   int j;
   while(i<size){
-      visited[size]=UNVISITED;
+      visited[i]=UNVISITED;
       i++;
   }
     InitQueue();
@@ -218,9 +220,9 @@ void BreadthFirstSearch(int size, int matrix[size][size], int start)
     
     while(QueueIsEmpty()==FALSE){
         form=DeQueue();
-        if(visited[form]==UNVISITED){
+        if(visited[form]!=VISITED){
           visited[form]=VISITED;
-
+          to=0;
           while(to<size){
               if(matrix[form][to]!=UNVISITED){
                   EnQueue(to);
@@ -230,7 +232,8 @@ void BreadthFirstSearch(int size, int matrix[size][size], int start)
           }   
         }
     }
-    for(j=0;i<size;j++){
+    printf("幅優先探索\n");
+    for(j=0;j<size;j++){
         if(visited[j]==VISITED){
             printf("%dは通った\n",j);
         }
